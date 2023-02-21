@@ -4,14 +4,15 @@
     box-sizing: border-box;
 
     body {
-        background: radial-gradient(rgb(136,195,245), #1294b8);
+        font-family: 'Poppins', sans-serif;
 
         header{
         display: flex;
         justify-content: space-around;
         align-items: center;
-        font-family: 'Poppins', sans-serif;
         padding: 13px;
+        background: radial-gradient(rgb(136,195,245), #1294b8);
+        width: 100%;
 
             h1{
                 color: white;
@@ -43,19 +44,88 @@
 
         main{
             #Home{
+                background: radial-gradient(rgb(136,195,245), #1294b8);
                 display: flex;
                 width: 100%;
+                height: 100vh;
+                align-items: center;
+                justify-content: space-evenly; 
 
                .headline{
                     width: 26%;
-               } 
+
+                    h2{
+                        font-size: xxx-large;
+                        color: darkslategrey;
+                    }
+
+                    p{
+                        margin: 12px 0;
+                    }
+
+                    form{
+                        position: relative;
+
+                        #email{
+                            width: 100%;
+                            padding: 15px;
+                            border-radius: 22px;
+                            border: none;
+                            -webkit-border-radius: 22px;
+                            -moz-border-radius: 22px;
+                            -ms-border-radius: 22px;
+                            -o-border-radius: 22px;
+                        }
+
+                        #Subscribe{
+                            position: absolute;
+                            top: 0;
+                            right: 4px;
+                            /*z-index: 1;
+                            */border: none;
+                            top: 5px;
+                            height: 36px;
+                            cursor: pointer;
+                            color: white;
+                            background-color: #1294b8;
+                            transform: translateX(0px);
+                            border-radius: 22px;
+                            -webkit-border-radius: 22px;
+                            -moz-border-radius: 22px;
+                            -ms-border-radius: 22px;
+                            -o-border-radius: 22px;
+                            width: 30%;
+                            transition: 0.8s;
+                            -webkit-transition: 0.8s;
+                            -moz-transition: 0.8s;
+                            -ms-transition: 0.8s;
+                            -o-transition: 0.8s;
+
+                            &:hover{
+                                background-color: rgb(136,195,245);
+
+                            }
+                        }
+                    }
+                } 
 
                 figure{
+                    width: 52%;
                     img{
                         width: 100%;
                     }
                 }
             }
+
+            
+
+
+
+
+
+
+
+
         }
     }
 }
