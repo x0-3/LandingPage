@@ -97,4 +97,60 @@
 }
 * body main #Home figure img {
   width: 100%;
+}
+* body main #Features {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+* body main #Features h2 {
+  margin: 20px 0;
+}
+* body main #Features p {
+  color: grey;
+  margin-bottom: 35px;
+  text-align: center;
+}
+* body main #Features .product_cards_section {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  color: white;
+}
+* body main #Features .product_cards_section .product_cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: radial-gradient(rgb(136, 195, 245), #1294b8);
+  width: 25%;
+  border-radius: 10px;
+  text-align: center;
+  padding: 68px 16px;
+  transition: 0.3s;
+}
+* body main #Features .product_cards_section .product_cards:hover {
+  transform: translate(0, -10px);
+}
+* body main #Features .product_cards_section .product_cards svg {
+  width: 13%;
+  margin: 22px 0;
+}
+* body main #Features .product_cards_section .product_cards p {
+  color: white;
+}
+* body main #Team {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+* body main #Team h2 {
+  margin: 20px 0;
+  width: 33%;
+  text-align: center;
+}
+* body main #Team p {
+  width: 42%;
+  text-align: center;
 }/*# sourceMappingURL=index.css.map */
