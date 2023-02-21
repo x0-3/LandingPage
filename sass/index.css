@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+* body {
+  background: radial-gradient(rgb(136, 195, 245), #1294b8);
+}
+* body header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  padding: 13px;
+}
+* body header h1 {
+  color: white;
+}
+* body header nav ul {
+  display: flex;
+  list-style: none;
+}
+* body header nav ul li {
+  margin: 3px 10px;
+}
+* body header nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+* body header .social-media-icons a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+}
+* body main #Home {
+  display: flex;
+  width: 100%;
+}
+* body main #Home .headline {
+  width: 26%;
+}
+* body main #Home figure img {
+  width: 100%;
+}/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    body {
+        background: radial-gradient(rgb(136,195,245), #1294b8);
+
+        header{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        font-family: 'Poppins', sans-serif;
+        padding: 13px;
+
+            h1{
+                color: white;
+            }
+
+            nav{
+                ul{
+                    display: flex;
+                    list-style: none;
+
+                    li{
+                        margin: 3px 10px;
+                        a{
+                            color: white;
+                            text-decoration: none;
+                        }
+                    }
+                }
+            }
+
+            .social-media-icons{
+                a{
+                    color: white;
+                    text-decoration: none;
+                    margin: 0 10px;
+                }
+            }
+        }
+
+        main{
+            #Home{
+                display: flex;
+                width: 100%;
+
+               .headline{
+                    width: 26%;
+               } 
+
+                figure{
+                    img{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
