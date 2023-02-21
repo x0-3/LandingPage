@@ -185,4 +185,39 @@
   -o-transform: scale(1.1);
   filter: grayscale(0%);
   -webkit-filter: grayscale(0%);
+}
+* body main #get_started {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 35px;
+  text-align: center;
+  background-image: url(/img/parallax.png);
+  height: 38vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+* body main #get_started h2 {
+  color: white;
+  margin-bottom: 15px;
+}
+* body main #get_started p {
+  color: grey;
+  width: 66%;
+  margin-bottom: 15px;
+}
+* body main #get_started button {
+  background-color: transparent;
+  padding: 10px 30px;
+  border-radius: 7px;
+  border: solid 2px white;
+  color: white;
+  cursor: pointer;
+}
+* body main #get_started button:hover {
+  background-color: white;
+  color: transparent;
 }/*# sourceMappingURL=index.css.map */
