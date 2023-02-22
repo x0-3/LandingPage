@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 
+
     body {
         font-family: 'Poppins', sans-serif;
 
@@ -162,6 +163,7 @@
                         svg{
                             width: 13%;
                             margin: 22px 0;
+                            filter: brightness(0) invert(1);
                         }
 
                         p{
@@ -238,7 +240,8 @@
                 margin-top: 35px;
                 text-align: center;
 
-                background-image: url(/img/parallax.png);
+                background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+                url(/img/parallax.png);
                 height: 38vh;
                 background-attachment: fixed;
                 background-position: center;
@@ -252,11 +255,10 @@
                 }
     
                 p{
-                    color: grey;
+                    color: darkgrey;
                     width: 66%;
                     margin-bottom: 15px;
-                }
-    
+                }    
     
                 button{
                     background-color: transparent;
@@ -268,14 +270,14 @@
     
                     &:hover{
                         background-color: white;
-                        color: transparent;
+                        color: darkgrey;
                     }
                 }
             }
-
-            #blog{
+        
+            // #blog{
                 
-            }
+            // }
 
 
 
