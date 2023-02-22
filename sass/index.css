@@ -168,9 +168,6 @@
   flex-direction: column;
   align-items: center;
 }
-* body main #Team .team_images_section figure .social-media-hover {
-  display: none;
-}
 * body main #Team .team_images_section figure strong {
   font-size: x-large;
 }
@@ -180,6 +177,7 @@
   border-radius: 80%;
   margin: 31px 0 20px;
   transition: transform 0.5s;
+  position: relative;
 }
 * body main #Team .team_images_section figure img:hover {
   transform: scale(1.1);
@@ -299,4 +297,42 @@
   display: flex;
   width: 100%;
   justify-content: space-evenly;
+  margin-top: 35px;
+  align-items: center;
+}
+* body main #pricing p {
+  color: darkgrey;
+}
+* body main #pricing article {
+  width: 33%;
+}
+* body main #pricing article h2 {
+  margin: 25px 0;
+}
+* body main #pricing article .counter {
+  display: flex;
+  width: 100%;
+  margin: 25px 0;
+}
+* body main #pricing article .Happy_user, * body main #pricing article .completeProject {
+  display: inline;
+  margin-right: 35px;
+}
+* body main #pricing article .Happy_user strong, * body main #pricing article .completeProject strong {
+  font-size: x-large;
+}
+* body main #pricing article button {
+  background-color: rgb(136, 195, 245);
+  border: none;
+  height: 37px;
+  width: 25%;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+* body main #pricing figure {
+  width: 45%;
+}
+* body main #pricing figure img {
+  width: 100%;
 }/*# sourceMappingURL=index.css.map */
