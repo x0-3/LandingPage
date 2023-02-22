@@ -335,4 +335,85 @@
 }
 * body main #pricing figure img {
   width: 100%;
+}
+* body main .ourPricing {
+  background-color: #F3F3F3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+* body main .ourPricing h2 {
+  margin: 15px 0 25px 0;
+}
+* body main .ourPricing p {
+  width: 32%;
+  text-align: center;
+  color: darkgrey;
+}
+* body main .ourPricing .cards {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+* body main .ourPricing .cards .card1, * body main .ourPricing .cards .card2, * body main .ourPricing .cards .card3 {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 20%;
+}
+* body main .ourPricing .cards .card1 .price, * body main .ourPricing .cards .card2 .price, * body main .ourPricing .cards .card3 .price {
+  display: flex;
+  align-items: baseline;
+}
+* body main .ourPricing .cards .card1 .price h2, * body main .ourPricing .cards .card2 .price h2, * body main .ourPricing .cards .card3 .price h2 {
+  font-size: xxx-large;
+  color: rgb(136, 195, 245);
+}
+* body main .ourPricing .cards .card1 .price p, * body main .ourPricing .cards .card2 .price p, * body main .ourPricing .cards .card3 .price p {
+  font-size: small;
+}
+* body main .ourPricing .cards .card1 ul, * body main .ourPricing .cards .card2 ul, * body main .ourPricing .cards .card3 ul {
+  list-style: none;
+}
+* body footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background-color: #26272B;
+  color: darkgrey;
+  padding: 35px 0;
+}
+* body footer a {
+  margin: 10px;
+  text-decoration: none;
+  color: darkgrey;
+}
+* body footer .socials a {
+  font-size: large;
+  display: inline-block;
+  line-height: 40px;
+  width: 40px;
+  height: 40px;
+  border-radius: 36px;
+  background-color: transparent;
+  border: 2px solid darkgrey;
+  color: darkgrey;
+  text-align: center;
+  -webkit-border-radius: 36px;
+  -moz-border-radius: 36px;
+  -ms-border-radius: 36px;
+  -o-border-radius: 36px;
+}
+* body footer .rgpd {
+  display: flex;
+  align-items: center;
+}
+* body footer .rgpd a {
+  margin: 10px 20px;
+}
+* body footer .rgpd hr {
+  height: 15px;
 }/*# sourceMappingURL=index.css.map */

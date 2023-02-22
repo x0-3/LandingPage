@@ -440,7 +440,110 @@
                 }
             }
 
+            .ourPricing{
+                background-color: #F3F3F3;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 100%;
 
+                h2{
+                    margin: 15px 0 25px 0;
+                }
+
+                p{
+                    width: 32%;
+                    text-align: center;
+                    color: darkgrey;
+                }
+
+                .cards{
+                    display: flex;
+                    justify-content: space-evenly;
+                    width: 100%;
+
+                    .card1, .card2, .card3{
+                        background-color: white;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        width: 20%;
+    
+                        .price{
+                            display: flex;
+                            align-items: baseline;
+
+                            h2{
+                                font-size: xxx-large;
+                                color: rgb(136,195,245);
+                            }
+
+                            p{
+                                font-size: small;
+                            }
+                        }
+
+                        ul{
+                            list-style: none;
+
+                            li{
+                                
+                            }
+                        }
+                    }
+                }
+
+
+            }
+        }
+
+        footer{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            background-color: #26272B;
+            color: darkgrey;
+            padding: 35px 0;
+
+            a{
+                margin: 10px;
+                text-decoration: none;
+                color: darkgrey;
+            }
+
+            .socials{
+                a {
+                    font-size: large;
+                    display: inline-block;
+                    // font-size: 18px;
+                    line-height: 40px;
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 36px;
+                    background-color: transparent;
+                    border: 2px solid darkgrey;
+                    color: darkgrey;
+                    text-align: center;
+                    -webkit-border-radius: 36px;
+                    -moz-border-radius: 36px;
+                    -ms-border-radius: 36px;
+                    -o-border-radius: 36px;
+                }
+            }
+
+            .rgpd{
+                display: flex;
+                align-items: center;
+
+                a{
+                    margin: 10px 20px;
+                }
+                
+                hr{
+                    height: 15px
+                }
+            }
 
         }
     }
