@@ -433,6 +433,10 @@
                         a{
                             text-decoration: none;
                             color: #6b93b1;
+
+                            &:hover{
+                                color: rgb(136,195,245);
+                            }
                         }
 
 
@@ -482,6 +486,10 @@
                         color: white;
                         border-radius: 5px;
                         cursor: pointer;
+
+                        &:hover{
+                            background-color: rgb(136,195,245);
+                        }
                     }
                 }
 
@@ -588,6 +596,10 @@
                             color: white;
                             margin-top: 20px;
                             cursor: pointer;
+
+                            &:hover{
+                                background-color: rgb(136,195,245);
+                            }
                         }
                     }
 

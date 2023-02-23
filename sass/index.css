@@ -342,6 +342,9 @@
   text-decoration: none;
   color: #6b93b1;
 }
+* body main #blog article figure a:hover {
+  color: rgb(136, 195, 245);
+}
 * body main #pricing {
   display: flex;
   width: 100%;
@@ -378,6 +381,9 @@
   color: white;
   border-radius: 5px;
   cursor: pointer;
+}
+* body main #pricing article button:hover {
+  background-color: rgb(136, 195, 245);
 }
 * body main #pricing figure {
   width: 45%;
@@ -467,6 +473,9 @@
   color: white;
   margin-top: 20px;
   cursor: pointer;
+}
+* body main .ourPricing .cards .card1 button:hover, * body main .ourPricing .cards .card2 button:hover, * body main .ourPricing .cards .card3 button:hover {
+  background-color: rgb(136, 195, 245);
 }
 * body main .ourPricing .cards .card2 {
   bottom: 20px;
