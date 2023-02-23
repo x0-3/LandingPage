@@ -8,6 +8,56 @@
         font-family: 'Poppins', sans-serif;
         background: radial-gradient(rgb(136,195,245), #1294b8);
 
+        .colorPicker_section {
+            position: fixed;
+            top: 50%;
+            display: flex;
+            align-items: center;
+            z-index: 1;
+
+            .i {
+                display: block;
+                cursor: pointer;
+            }
+            
+
+            .colorPicker{
+                background-color: black;
+                
+                #myColors{
+                    display: none;
+                    button{
+                        cursor: pointer;
+                        bottom: 20px;
+                        right: 30px;
+                        width: 50px;
+                        height: 50px;
+                        border-radius: 36px;
+                        color: white;
+                        text-align: center;
+                        -webkit-border-radius: 36px;
+                        -moz-border-radius: 36px;
+                        -ms-border-radius: 36px;
+                        -o-border-radius: 36px;
+                        border: none;
+                    }       
+                    
+                    .colorRed{
+                        background-color: darkred;
+                    }
+                    .colordarkgreen{
+                        background-color: darkgreen;
+                    }
+                    .colororange{
+                        background-color: orange;
+                    }
+                }
+
+            }
+
+
+            
+        }
 
         header{
         display: flex;
@@ -151,7 +201,7 @@
                     width: 100%;
                     color: white;
 
-                    .product_cards{
+                    #product_cards{
                         display: flex;
                         flex-direction: column;
                         justify-content: center;
@@ -341,6 +391,7 @@
                     border: solid 2px white;
                     color:white;
                     cursor: pointer;
+                    height: 5vh;
     
                     &:hover{
                         background-color: white;

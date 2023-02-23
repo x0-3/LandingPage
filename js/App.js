@@ -16,3 +16,26 @@ function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTo({top: 0, behavior: 'smooth'});
 }
+
+
+function myFunction() {
+  var x = document.getElementById("myColors");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+
+function changeBodyBg(color){
+  var background = document.getElementsByClassName("colorChange");
+  var text = document.getElementsByClassName("textColorChange");
+
+  for (var i = 0; i < background.length; i++) {
+    background[i].style.background = color;
+  }
+
+  for (var i = 0; i < text.length; i++) {
+    text[i].style.color = color;
+  }
+}
