@@ -187,6 +187,25 @@
   visibility: hidden;
   opacity: 0;
   transition: opacity 0.2s, visibility 0.2s;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+* body main #Team .team_images_section figure .hoverImg .social-media-hover a {
+  cursor: pointer;
+  /* position: fixed; */
+  font-size: large;
+  line-height: 35px;
+  width: 35px;
+  height: 35px;
+  border-radius: 36px;
+  background-color: white;
+  color: black;
+  text-align: center;
+  -webkit-border-radius: 36px;
+  -moz-border-radius: 36px;
+  -ms-border-radius: 36px;
+  -o-border-radius: 36px;
 }
 * body main #Team .team_images_section figure .hoverImg img {
   width: 65%;
