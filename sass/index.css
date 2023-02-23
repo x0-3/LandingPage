@@ -5,13 +5,13 @@
 }
 * body {
   font-family: "Poppins", sans-serif;
+  background: radial-gradient(rgb(136, 195, 245), #1294b8);
 }
 * body header {
   display: flex;
   justify-content: space-around;
   align-items: center;
   padding: 13px;
-  background: radial-gradient(rgb(136, 195, 245), #1294b8);
   width: 100%;
 }
 * body header h1 {
@@ -33,8 +33,10 @@
   text-decoration: none;
   margin: 0 10px;
 }
+* body main #Features, * body main #Team, * body main #get_started, * body main #blog, * body main #pricing {
+  background-color: white;
+}
 * body main #Home {
-  background: radial-gradient(rgb(136, 195, 245), #1294b8);
   display: flex;
   width: 100%;
   height: 100vh;
@@ -102,6 +104,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-top: 30px;
 }
 * body main #Features h2 {
   margin: 20px 0;
@@ -132,10 +135,10 @@
 * body main #Features .product_cards_section .product_cards:hover {
   transform: translate(0, -10px);
 }
-* body main #Features .product_cards_section .product_cards svg {
-  width: 13%;
+* body main #Features .product_cards_section .product_cards i {
+  font-size: 50px;
   margin: 22px 0;
-  filter: brightness(0) invert(1);
+  color: white;
 }
 * body main #Features .product_cards_section .product_cards p {
   color: white;
@@ -145,6 +148,7 @@
   flex-direction: column;
   align-items: center;
   width: 100%;
+  padding-top: 30px;
 }
 * body main #Team h2 {
   margin: 20px 0;
@@ -160,7 +164,7 @@
   display: flex;
   width: 100%;
   justify-content: center;
-  margin-top: 35px;
+  margin: 35px 0;
 }
 * body main #Team .team_images_section figure {
   width: 23%;
@@ -193,7 +197,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 35px;
+  padding-top: 35px;
   text-align: center;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/img/parallax.png);
   height: 38vh;
@@ -224,7 +228,7 @@
   color: darkgrey;
 }
 * body main #blog {
-  margin-top: 35px;
+  padding-top: 45px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -287,7 +291,7 @@
 }
 * body main #blog article figure a {
   text-decoration: none;
-  color: #1294b8;
+  color: #6b93b1;
 }
 * body main #blog article figure:hover .hoverOnImg {
   visibility: visible;
@@ -297,7 +301,7 @@
   display: flex;
   width: 100%;
   justify-content: space-evenly;
-  margin-top: 35px;
+  padding-top: 45px;
   align-items: center;
 }
 * body main #pricing p {
@@ -322,7 +326,7 @@
   font-size: x-large;
 }
 * body main #pricing article button {
-  background-color: rgb(136, 195, 245);
+  background-color: #6390ff;
   border: none;
   height: 37px;
   width: 25%;
@@ -374,7 +378,12 @@
 }
 * body main .ourPricing .cards .card1 .price h2, * body main .ourPricing .cards .card2 .price h2, * body main .ourPricing .cards .card3 .price h2 {
   font-size: xxx-large;
-  color: rgb(136, 195, 245);
+  color: #6390ff;
+  display: flex;
+  align-items: flex-start;
+}
+* body main .ourPricing .cards .card1 .price h2 span, * body main .ourPricing .cards .card2 .price h2 span, * body main .ourPricing .cards .card3 .price h2 span {
+  font-size: smaller;
 }
 * body main .ourPricing .cards .card1 .price p, * body main .ourPricing .cards .card2 .price p, * body main .ourPricing .cards .card3 .price p {
   font-size: small;
@@ -385,13 +394,31 @@
 }
 * body main .ourPricing .cards .card1 ul li, * body main .ourPricing .cards .card2 ul li, * body main .ourPricing .cards .card3 ul li {
   margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+* body main .ourPricing .cards .card1 ul li .fa-circle-check, * body main .ourPricing .cards .card2 ul li .fa-circle-check, * body main .ourPricing .cards .card3 ul li .fa-circle-check {
+  color: #a9bea0;
+  margin-right: 5px;
+}
+* body main .ourPricing .cards .card1 ul li .fa-circle-xmark, * body main .ourPricing .cards .card2 ul li .fa-circle-xmark, * body main .ourPricing .cards .card3 ul li .fa-circle-xmark {
+  color: #9e6465;
+  margin-right: 5px;
+}
+* body main .ourPricing .cards .card1 ul li p, * body main .ourPricing .cards .card2 ul li p, * body main .ourPricing .cards .card3 ul li p {
+  display: flex;
+  width: 100%;
+  /* align-items: center; */
+  justify-content: space-between;
+  flex-direction: row;
+  color: black;
 }
 * body main .ourPricing .cards .card1 button, * body main .ourPricing .cards .card2 button, * body main .ourPricing .cards .card3 button {
   width: 100%;
   height: 35px;
   border-radius: 5px;
   border: none;
-  background-color: rgb(136, 195, 245);
+  background-color: #6390ff;
   color: white;
   margin-top: 20px;
   cursor: pointer;
@@ -399,6 +426,17 @@
 * body main .ourPricing .cards .card2 {
   bottom: 20px;
   position: relative;
+}
+* body main .ourPricing .cards .card2 small {
+  background-color: #6390ff;
+  color: white;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 20%;
+  text-align: center;
+  border-radius: 0 10px;
+  padding: 10px;
 }
 * body footer {
   display: flex;

@@ -6,14 +6,16 @@
 
     body {
         font-family: 'Poppins', sans-serif;
+        background: radial-gradient(rgb(136,195,245), #1294b8);
+
 
         header{
         display: flex;
         justify-content: space-around;
         align-items: center;
         padding: 13px;
-        background: radial-gradient(rgb(136,195,245), #1294b8);
         width: 100%;
+
 
             h1{
                 color: white;
@@ -45,8 +47,12 @@
 
         main{
 
+            #Features, #Team, #get_started,#blog,#pricing{
+                background-color: white;
+            }
+
             #Home{
-                background: radial-gradient(rgb(136,195,245), #1294b8);
+                // background: radial-gradient(rgb(136,195,245), #1294b8);
                 display: flex;
                 width: 100%;
                 height: 100vh;
@@ -126,6 +132,7 @@
                 display: flex;
                 flex-direction: column;
                 align-items: center;
+                padding-top: 30px;
 
 
                 h2{
@@ -160,10 +167,10 @@
                             transform: translate(0, -10px);
                         }
 
-                        svg{
-                            width: 13%;
+                        i{
+                            font-size: 50px;
                             margin: 22px 0;
-                            filter: brightness(0) invert(1);
+                            color: white;
                         }
 
                         p{
@@ -178,6 +185,7 @@
                 flex-direction: column;
                 align-items: center;
                 width: 100%;
+                padding-top: 30px;
 
                 h2{
                     margin: 20px 0;
@@ -195,7 +203,7 @@
                     display: flex;
                     width: 100%;
                     justify-content: center;
-                    margin-top: 35px;
+                    margin: 35px 0;
 
 
                     figure{
@@ -261,7 +269,7 @@
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
-                margin-top: 35px;
+                padding-top: 35px;
                 text-align: center;
 
                 background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
@@ -300,7 +308,7 @@
             }
         
             #blog{
-                margin-top: 35px;
+                padding-top: 45px;
                 display: flex;
                 flex-direction: column;
                 align-items: center;
@@ -374,7 +382,7 @@
 
                         a{
                             text-decoration: none;
-                            color: #1294b8;
+                            color: #6b93b1;
                         }
                         &:hover .hoverOnImg {
                             visibility: visible;
@@ -391,7 +399,7 @@
                 display: flex;
                 width: 100%;
                 justify-content: space-evenly;
-                margin-top: 35px;
+                padding-top: 45px;
                 align-items: center;
 
                 p{
@@ -421,7 +429,7 @@
                     }
 
                     button{
-                        background-color: rgb(136,195,245);
+                        background-color: #6390ff;
                         border: none;
                         height: 37px;
                         width: 25%;
@@ -480,7 +488,13 @@
 
                             h2{
                                 font-size: xxx-large;
-                                color: rgb(136,195,245);
+                                color: #6390ff;
+                                display: flex;
+                                align-items: flex-start;
+
+                                span{
+                                    font-size: smaller;
+                                }
                             }
 
                             p{
@@ -493,6 +507,28 @@
                             width: 100%;
                             li{
                                margin-bottom: 10px;
+                               display: flex;
+                               align-items: center;
+
+                               .fa-circle-check{
+                                    color: #a9bea0;
+                                    margin-right: 5px;
+                                }
+
+                                .fa-circle-xmark{
+                                    color: #9e6465;
+                                    margin-right: 5px;  
+                                }
+
+                                p{
+                                    display: flex;
+                                    width: 100%;
+                                    /* align-items: center; */
+                                    justify-content: space-between;
+                                    flex-direction: row;
+                                    color: black;
+                                }
+
                             }
                         }
 
@@ -502,7 +538,7 @@
                             height: 35px;
                             border-radius: 5px;
                             border: none;
-                            background-color: rgb(136,195,245);
+                            background-color: #6390ff;
                             color: white;
                             margin-top: 20px;
                             cursor: pointer;
@@ -512,6 +548,18 @@
                     .card2{
                         bottom: 20px;
                         position: relative;
+
+                        small{
+                            background-color: #6390ff;
+                            color: white;
+                            position: absolute;
+                            right: 0;
+                            top: 0;
+                            width: 20%;
+                            text-align: center;
+                            border-radius: 0 10px;
+                            padding: 10px;
+                        }
                     }
                 }
 
