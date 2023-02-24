@@ -64,7 +64,7 @@
                     }
                     
                     .colorRed{
-                        background: radial-gradient(rgb(203 77 83), #ff0000);
+                        background: radial-gradient(rgb(255 0 0), rgb(203 77 83));
                     }
                     .colorgreen{
                         background: radial-gradient(rgb(0 255 0), #59a304);
@@ -197,7 +197,7 @@
 
         main{
 
-            #Features, #Team, #get_started,#blog,#pricing{
+            #Features, #Team,#blog{
                 padding-top: 90px;
                 height: 100vh;
             }
@@ -261,6 +261,7 @@
                 flex-direction: column;
                 align-items: center;
                 width: 100%;
+                background-color: lightgrey;
 
                 h2{
                     margin: 20px 0;

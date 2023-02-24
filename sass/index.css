@@ -57,7 +57,7 @@
   background: radial-gradient(rgb(136, 195, 245), #1294b8);
 }
 * body .colorPicker_section .colorPicker #myColors .colorRed {
-  background: radial-gradient(rgb(203, 77, 83), #ff0000);
+  background: radial-gradient(rgb(255, 0, 0), rgb(203, 77, 83));
 }
 * body .colorPicker_section .colorPicker #myColors .colorgreen {
   background: radial-gradient(rgb(0, 255, 0), #59a304);
@@ -161,7 +161,7 @@
 * body header #Home figure img {
   width: 100%;
 }
-* body main #Features, * body main #Team, * body main #get_started, * body main #blog, * body main #pricing {
+* body main #Features, * body main #Team, * body main #blog {
   padding-top: 90px;
   height: 100vh;
 }
@@ -212,6 +212,7 @@
   flex-direction: column;
   align-items: center;
   width: 100%;
+  background-color: lightgrey;
 }
 * body main #Team h2 {
   margin: 20px 0;
