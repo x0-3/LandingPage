@@ -6,7 +6,6 @@
 
     body {
         font-family: 'Poppins', sans-serif;
-        background: radial-gradient(rgb(136,195,245), #1294b8);
 
         .colorPicker_section {
             position: fixed;
@@ -15,23 +14,36 @@
             align-items: center;
             z-index: 1;
 
-            .i {
+            i {
                 display: block;
                 cursor: pointer;
+                background: rgb(0 0 0 / 80%);
+                color: white;
+                font-size: 25px;
+                border-radius: 0 5px 5px 0;
+                padding: 5px;
+
+                &:hover{
+                    color: rgb(255 255 255 / 50%);
+                }
             }
             
 
             .colorPicker{
-                background-color: black;
+                background: rgb(0 0 0 / 80%);
+                border-radius: 0 5px 5px 0;
+                width: 45%;
                 
                 #myColors{
                     display: none;
+                    flex-wrap: wrap;
+
                     button{
                         cursor: pointer;
                         bottom: 20px;
                         right: 30px;
-                        width: 50px;
-                        height: 50px;
+                        width: 40px;
+                        height: 40px;
                         border-radius: 36px;
                         color: white;
                         text-align: center;
@@ -40,16 +52,25 @@
                         -ms-border-radius: 36px;
                         -o-border-radius: 36px;
                         border: none;
+                        margin: 5px;
+
+                        &:hover{
+                            opacity: 0.5;
+                        }
                     }       
+
+                    .colorInit{
+                        background: radial-gradient(rgb(136,195,245), #1294b8);
+                    }
                     
                     .colorRed{
-                        background-color: darkred;
+                        background: radial-gradient(rgb(203 77 83), #ff0000);
                     }
-                    .colordarkgreen{
-                        background-color: darkgreen;
+                    .colorgreen{
+                        background: radial-gradient(rgb(0 255 0), #59a304);
                     }
-                    .colororange{
-                        background-color: orange;
+                    .colorYellow{
+                        background: radial-gradient(rgb(255 241 114), #ffc107);
                     }
                 }
 
@@ -61,55 +82,51 @@
 
         header{
         display: flex;
-        justify-content: space-around;
-        align-items: center;
-        padding: 13px;
+        flex-direction: column;
         width: 100%;
+        background: radial-gradient(rgb(136,195,245), #1294b8);
 
+            .navSection{
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                padding: 13px;
+                width: 100%;
+                h1{
+                    color: white;
+                }
 
-            h1{
-                color: white;
-            }
+                nav{
+                    ul{
+                        display: flex;
+                        list-style: none;
 
-            nav{
-                ul{
-                    display: flex;
-                    list-style: none;
-
-                    li{
-                        margin: 3px 10px;
-                        a{
-                            color: white;
-                            text-decoration: none;
+                        li{
+                            margin: 3px 10px;
+                            a{
+                                color: white;
+                                text-decoration: none;
+                            }
                         }
                     }
                 }
+
+                .social-media-icons{
+                    a{
+                        color: white;
+                        text-decoration: none;
+                        margin: 0 10px;
+                    }
+                }                
             }
 
-            .social-media-icons{
-                a{
-                    color: white;
-                    text-decoration: none;
-                    margin: 0 10px;
-                }
-            }
-        }
-
-        main{
-
-            #Features, #Team, #get_started,#blog,#pricing{
-                background-color: white;
-            }
 
             #Home{
-                // background: radial-gradient(rgb(136,195,245), #1294b8);
                 display: flex;
                 width: 100%;
                 height: 100vh;
                 align-items: center;
                 justify-content: space-evenly; 
-
-
 
                .headline{
                     width: 26%;
@@ -176,13 +193,22 @@
                     }
                 }
             }
+        }
+
+        main{
+
+            #Features, #Team, #get_started,#blog,#pricing{
+                padding-top: 90px;
+                height: 100vh;
+            }
+
+            
 
             #Features{
                 // text-align: center;
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-                padding-top: 30px;
 
 
                 h2{
@@ -235,7 +261,6 @@
                 flex-direction: column;
                 align-items: center;
                 width: 100%;
-                padding-top: 30px;
 
                 h2{
                     margin: 20px 0;
@@ -401,7 +426,6 @@
             }
         
             #blog{
-                padding-top: 45px;
                 display: flex;
                 flex-direction: column;
                 align-items: center;
@@ -500,7 +524,6 @@
                 display: flex;
                 width: 100%;
                 justify-content: space-evenly;
-                padding-top: 45px;
                 align-items: center;
 
                 p{

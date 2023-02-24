@@ -5,7 +5,6 @@
 }
 * body {
   font-family: "Poppins", sans-serif;
-  background: radial-gradient(rgb(136, 195, 245), #1294b8);
 }
 * body .colorPicker_section {
   position: fixed;
@@ -14,22 +13,33 @@
   align-items: center;
   z-index: 1;
 }
-* body .colorPicker_section .i {
+* body .colorPicker_section i {
   display: block;
   cursor: pointer;
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  font-size: 25px;
+  border-radius: 0 5px 5px 0;
+  padding: 5px;
+}
+* body .colorPicker_section i:hover {
+  color: rgba(255, 255, 255, 0.5);
 }
 * body .colorPicker_section .colorPicker {
-  background-color: black;
+  background: rgba(0, 0, 0, 0.8);
+  border-radius: 0 5px 5px 0;
+  width: 45%;
 }
 * body .colorPicker_section .colorPicker #myColors {
   display: none;
+  flex-wrap: wrap;
 }
 * body .colorPicker_section .colorPicker #myColors button {
   cursor: pointer;
   bottom: 20px;
   right: 30px;
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   border-radius: 36px;
   color: white;
   text-align: center;
@@ -38,66 +48,76 @@
   -ms-border-radius: 36px;
   -o-border-radius: 36px;
   border: none;
+  margin: 5px;
+}
+* body .colorPicker_section .colorPicker #myColors button:hover {
+  opacity: 0.5;
+}
+* body .colorPicker_section .colorPicker #myColors .colorInit {
+  background: radial-gradient(rgb(136, 195, 245), #1294b8);
 }
 * body .colorPicker_section .colorPicker #myColors .colorRed {
-  background-color: darkred;
+  background: radial-gradient(rgb(203, 77, 83), #ff0000);
 }
-* body .colorPicker_section .colorPicker #myColors .colordarkgreen {
-  background-color: darkgreen;
+* body .colorPicker_section .colorPicker #myColors .colorgreen {
+  background: radial-gradient(rgb(0, 255, 0), #59a304);
 }
-* body .colorPicker_section .colorPicker #myColors .colororange {
-  background-color: orange;
+* body .colorPicker_section .colorPicker #myColors .colorYellow {
+  background: radial-gradient(rgb(255, 241, 114), #ffc107);
 }
 * body header {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background: radial-gradient(rgb(136, 195, 245), #1294b8);
+}
+* body header .navSection {
   display: flex;
   justify-content: space-around;
   align-items: center;
   padding: 13px;
   width: 100%;
 }
-* body header h1 {
+* body header .navSection h1 {
   color: white;
 }
-* body header nav ul {
+* body header .navSection nav ul {
   display: flex;
   list-style: none;
 }
-* body header nav ul li {
+* body header .navSection nav ul li {
   margin: 3px 10px;
 }
-* body header nav ul li a {
+* body header .navSection nav ul li a {
   color: white;
   text-decoration: none;
 }
-* body header .social-media-icons a {
+* body header .navSection .social-media-icons a {
   color: white;
   text-decoration: none;
   margin: 0 10px;
 }
-* body main #Features, * body main #Team, * body main #get_started, * body main #blog, * body main #pricing {
-  background-color: white;
-}
-* body main #Home {
+* body header #Home {
   display: flex;
   width: 100%;
   height: 100vh;
   align-items: center;
   justify-content: space-evenly;
 }
-* body main #Home .headline {
+* body header #Home .headline {
   width: 26%;
 }
-* body main #Home .headline h2 {
+* body header #Home .headline h2 {
   font-size: xxx-large;
   color: darkslategrey;
 }
-* body main #Home .headline p {
+* body header #Home .headline p {
   margin: 12px 0;
 }
-* body main #Home .headline form {
+* body header #Home .headline form {
   position: relative;
 }
-* body main #Home .headline form #email {
+* body header #Home .headline form #email {
   width: 100%;
   padding: 15px;
   border-radius: 22px;
@@ -107,7 +127,7 @@
   -ms-border-radius: 22px;
   -o-border-radius: 22px;
 }
-* body main #Home .headline form #Subscribe {
+* body header #Home .headline form #Subscribe {
   position: absolute;
   top: 0;
   right: 4px;
@@ -132,20 +152,23 @@
   -ms-transition: 0.8s;
   -o-transition: 0.8s;
 }
-* body main #Home .headline form #Subscribe:hover {
+* body header #Home .headline form #Subscribe:hover {
   background-color: rgb(136, 195, 245);
 }
-* body main #Home figure {
+* body header #Home figure {
   width: 52%;
 }
-* body main #Home figure img {
+* body header #Home figure img {
   width: 100%;
+}
+* body main #Features, * body main #Team, * body main #get_started, * body main #blog, * body main #pricing {
+  padding-top: 90px;
+  height: 100vh;
 }
 * body main #Features {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 30px;
 }
 * body main #Features h2 {
   margin: 20px 0;
@@ -189,7 +212,6 @@
   flex-direction: column;
   align-items: center;
   width: 100%;
-  padding-top: 30px;
 }
 * body main #Team h2 {
   margin: 20px 0;
@@ -315,7 +337,6 @@
   color: darkgrey;
 }
 * body main #blog {
-  padding-top: 45px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -391,7 +412,6 @@
   display: flex;
   width: 100%;
   justify-content: space-evenly;
-  padding-top: 45px;
   align-items: center;
 }
 * body main #pricing p {

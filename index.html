@@ -16,26 +16,48 @@
 </head>
 <body>
     <header class="colorChange">
-        <h1>Kucra</h1>
 
-        <nav>
-            <ul>
-                <li><a href="#Home">HOME</a></li>
-                <li><a href="#Features">FEATURES</a></li>
-                <li><a href="#">CLIENT</a></li>
-                <li><a href="#pricing">PRICING</a></li>
-                <li><a href="#">FAQ</a></li>
-                <li><a href="#">ABOUT</a></li>
-                <li><a href="#blog">BLOG</a></li>
-                <li><a href="#">CONTACT</a></li>
-            </ul>
-        </nav>
+        <section class="navSection">
+            <h1>Kucra</h1>
 
-        <div class="social-media-icons">
-            <a href="" target="_blank" class="fa fa-facebook"></a>
-            <a href="" target="_blank" class="fa fa-twitter"></a>
-            <a href="" target="_blank" class="fa fa-instagram"></a>
+            <nav>
+                <ul>
+                    <li><a href="#Home">HOME</a></li>
+                    <li><a href="#Features">FEATURES</a></li>
+                    <li><a href="#">CLIENT</a></li>
+                    <li><a href="#pricing">PRICING</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="#blog">BLOG</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                </ul>
+            </nav>
+
+            <div class="social-media-icons">
+                <a href="" target="_blank" class="fa fa-facebook"></a>
+                <a href="" target="_blank" class="fa fa-twitter"></a>
+                <a href="" target="_blank" class="fa fa-instagram"></a>
+            </div>            
+        </section>
+        
+
+        <section id="Home">
+
+            <div class="headline">
+                <h2>We are StartUp Creative Kucra Agency</h2>
+                <p>Carefully crafted after analysing the needs of different industries and the design achieves a great balance beetween purpose & presentation</p>
+                <form>
+                    <input type="email" name="email" id="email" placeholder="Enter your email">
+                    <input type="submit" id="Subscribe" value="SUBSCRIBE" class="buttonColorChange">
+                </form>
+            </div>
+
+            <figure>
+                <img src="img/illustration.svg" alt="laptop with a cat on top of screen">
+            </figure>
+        </section>            
         </div>
+
     </header>
 
     <main>
@@ -43,9 +65,10 @@
         <section class="colorPicker_section">
             <div class="colorPicker">
                 <div id="myColors">
-                    <button class="colorRed" type="button" onclick="changeBodyBg('darkred');"></button>
-                    <button class="colordarkgreen" type="button" onclick="changeBodyBg('darkgreen');"></button>
-                    <button class="colororange" type="button" onclick="changeBodyBg('orange');"></button>
+                    <button class="colorInit" type="button" onclick="changeBodyBg('radial-gradient(rgb(136,195,245), #1294b8)'); textColor('#1294b8'); "></button>
+                    <button class="colorRed" type="button" onclick="changeBodyBg('radial-gradient(rgb(203 77 83), #ff0000)'); textColor('#ff0000');"></button>
+                    <button class="colorgreen" type="button" onclick="changeBodyBg('radial-gradient(rgb(0 255 0), #59a304)'); textColor('#59a304');"></button>
+                    <button class="colorYellow" type="button" onclick="changeBodyBg('radial-gradient(rgb(255 241 114), #ffc107)'); textColor('#ffc107');"></button>
                   </div>
             </div>
             <i class="fa-solid fa-palette" onclick="myFunction()"></i>
@@ -53,21 +76,7 @@
 
 
 
-        <section id="Home" class="colorChange">
-
-            <div class="headline">
-                <h2>We are StartUp Creative Kucra Agency</h2>
-                <p>Carefully crafted after analysing the needs of different industries and the design achieves a great balance beetween purpose & presentation</p>
-                <form>
-                    <input type="email" name="email" id="email" placeholder="Enter your email">
-                    <input type="submit" id="Subscribe" value="SUBSCRIBE" class="colorChange">
-                </form>
-            </div>
-
-            <figure>
-                <img src="img/illustration.svg" alt="laptop with a cat on top of screen">
-            </figure>
-        </section>
+        
 
 
         <section id="Features">
@@ -171,7 +180,7 @@
         <section id="get_started">
             <h2>Let's get started with Kucra</h2>
             <p>They are a good way to get you started if you want to build something similar or use from existing apps wich will reduce the cost, efforts and time of the developers.</p>
-            <button id="get_started" class="colorChange">Get Started</button>
+            <button id="get_started">Get Started</button>
         </section>
 
 
@@ -274,7 +283,7 @@
                 </div>
 
 
-                <button class="colorChange">Learn More</button>
+                <button class="buttonColorChange">Learn More</button>
             </article>
 
             <figure>
@@ -319,11 +328,11 @@
                         </li>
                     </ul>
 
-                    <button class="colorChange">Join Now</button>
+                    <button class="buttonColorChange">Join Now</button>
                 </div>
 
                 <div class="card2">
-                    <small class="colorChange">20% SALE</small>
+                    <small class="buttonColorChange">20% SALE</small>
                     <h4>Advanced</h4>
                     <div class="price">
                         <h2 class="textColorChange"><span>$</span>19</h2>
@@ -353,7 +362,7 @@
                         </li>
                     </ul>
 
-                    <button class="colorChange">Join Now</button>
+                    <button class="buttonColorChange">Join Now</button>
                 </div>
 
                 <div class="card3">
@@ -386,7 +395,7 @@
                         </li>
                     </ul>
 
-                    <button class="colorChange">Join Now</button>
+                    <button class="buttonColorChange">Join Now</button>
                 </div>
             </div>
         </section>
