@@ -1,5 +1,5 @@
 # LandingPage
-### <div align="center">non responsive landing page using html ccs framework sass and js.</div>  
+### <div align="center">Web responsive landing page using html ccs framework sass and js.</div>  
   
 
 <br/>  
