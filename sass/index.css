@@ -635,7 +635,7 @@
 }
 
 @media only screen and (min-width: 768px) and (max-width: 959px) {
-  body h2, body p {
+  body h2 {
     margin: 10px;
   }
   body header .navSection {
@@ -692,6 +692,13 @@
   }
   body main #blog article figure p {
     margin: 0;
+  }
+  body main #blog article figure .img .hoverOnImg {
+    visibility: visible;
+    opacity: 1;
+  }
+  body main #blog article figure .img .hoverOnImg ul {
+    margin: 10px;
   }
   body main #pricing article {
     width: 45%;
