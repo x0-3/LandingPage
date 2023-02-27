@@ -795,10 +795,15 @@
 }
 
 $breakpoint-mobile : 767px;
+$breakpoint-tablet : 768px;
+$breakpoint-laptop : 959px;
 
-@media only screen and (max-width: $breakpoint-mobile){
-
+@media only screen and (min-width: $breakpoint-tablet) and (max-width:$breakpoint-laptop){
     body{
+        h2,p{
+            margin: 10px;
+        }
+
         header{
             .navSection{
                 justify-content: flex-start;
@@ -829,9 +834,96 @@ $breakpoint-mobile : 767px;
 
             #Home{
                 flex-direction: column-reverse;
-
                 .headline{
+                    width: 95%;
+                }
+
+                figure{
+                    width: 95%;
+                }
+            }
+     
+        }
+
+        main{
+            #Features{
+                .product_cards_section{
+                    #product_cards{
+                        padding: 25px 0px;
+                        width: 31%;
+                    }
+                }
+            }
+
+            #Team {
+                h2,p{
                     width: 100%;
+                }
+
+                .team_images_section{
+                    figure{
+                        width: 25%;
+                    }
+                } 
+            }
+
+            #blog {
+                p{
+                    width: 100%;
+                }
+
+                article {
+                    figure{
+                        width: 32%;
+                        p{
+                            margin: 0;
+                        }   
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: $breakpoint-mobile){
+
+    body{
+        h2,p{
+            margin: 10px;
+        }
+
+        header{
+            .navSection{
+                justify-content: flex-start;
+                display: flex;
+                flex-wrap: wrap;
+                padding: 5px;
+
+                nav{
+                    display: none;
+                    overflow: hidden;
+                    position: relative;
+                    width: 100%;
+                    text-align: center;
+
+                    ul{
+                        display: block;
+                        margin: 10px;
+                    }
+                }
+                .fa-bars{
+                    display: block;
+                    position: absolute;
+                    right: 15px;
+                    top: 15px;
+                    color: white;
+                }
+            }
+
+            #Home{
+                flex-direction: column-reverse;
+                .headline{
+                    width: 95%;
                 }
 
                 figure{
@@ -841,9 +933,11 @@ $breakpoint-mobile : 767px;
         }
 
         main{
+            
+
             #Features, #Team,#blog{
                 height: auto;
-
+                margin-top: 50px;
             }
 
             #Features{
@@ -854,6 +948,7 @@ $breakpoint-mobile : 767px;
 
                     #product_cards{
                         width: 80%;
+                        margin: 20px;
                     }
                 }
             }
@@ -868,6 +963,7 @@ $breakpoint-mobile : 767px;
 
                     figure{
                         width: 80%;
+                        margin: 20px;
                     }
                 }
             }
@@ -883,12 +979,20 @@ $breakpoint-mobile : 767px;
 
                     figure{
                         width: 80%;
+                        margin: 20px;
                     }
                 }
             }
 
             #pricing{
                 flex-direction: column;
+                
+                h2{
+                    text-align: center;
+                }
+                strong{
+                    margin:10px;
+                }
 
                 article{
                     width: 100%;
@@ -900,6 +1004,7 @@ $breakpoint-mobile : 767px;
             }
 
             .ourPricing{
+
                 p{
                     width: 100%;
                 }
@@ -910,13 +1015,19 @@ $breakpoint-mobile : 767px;
                     .card1, .card2, .card3{
                         width: 80%;
                     }
+                    .card2{
+                        bottom: 0;
+                    }
                 }
             }
         }
 
-        #myBtn{
-            right: 100px;
-
+        footer{
+            .rgpd{
+                a{
+                    margin: 10px;
+                }
+            }
         }
     }
 

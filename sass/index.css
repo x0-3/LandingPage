@@ -634,7 +634,10 @@
   -o-border-radius: 36px;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+  body h2, body p {
+    margin: 10px;
+  }
   body header .navSection {
     justify-content: flex-start;
     display: flex;
@@ -663,13 +666,71 @@
     flex-direction: column-reverse;
   }
   body header #Home .headline {
+    width: 95%;
+  }
+  body header #Home figure {
+    width: 95%;
+  }
+  body main #Features .product_cards_section #product_cards {
+    padding: 25px 0px;
+    width: 31%;
+  }
+  body main #Team h2, body main #Team p {
     width: 100%;
+  }
+  body main #Team .team_images_section figure {
+    width: 25%;
+  }
+  body main #blog p {
+    width: 100%;
+  }
+  body main #blog article figure {
+    width: 32%;
+  }
+  body main #blog article figure p {
+    margin: 0;
+  }
+}
+@media only screen and (max-width: 767px) {
+  body h2, body p {
+    margin: 10px;
+  }
+  body header .navSection {
+    justify-content: flex-start;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px;
+  }
+  body header .navSection nav {
+    display: none;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    text-align: center;
+  }
+  body header .navSection nav ul {
+    display: block;
+    margin: 10px;
+  }
+  body header .navSection .fa-bars {
+    display: block;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    color: white;
+  }
+  body header #Home {
+    flex-direction: column-reverse;
+  }
+  body header #Home .headline {
+    width: 95%;
   }
   body header #Home figure {
     width: 100%;
   }
   body main #Features, body main #Team, body main #blog {
     height: auto;
+    margin-top: 50px;
   }
   body main #Features .product_cards_section {
     flex-direction: column;
@@ -677,6 +738,7 @@
   }
   body main #Features .product_cards_section #product_cards {
     width: 80%;
+    margin: 20px;
   }
   body main #Team h2, body main #Team p {
     width: 100%;
@@ -687,6 +749,7 @@
   }
   body main #Team .team_images_section figure {
     width: 80%;
+    margin: 20px;
   }
   body main #blog p {
     width: 100%;
@@ -697,9 +760,16 @@
   }
   body main #blog article figure {
     width: 80%;
+    margin: 20px;
   }
   body main #pricing {
     flex-direction: column;
+  }
+  body main #pricing h2 {
+    text-align: center;
+  }
+  body main #pricing strong {
+    margin: 10px;
   }
   body main #pricing article {
     width: 100%;
@@ -717,7 +787,10 @@
   body main .ourPricing .cards .card1, body main .ourPricing .cards .card2, body main .ourPricing .cards .card3 {
     width: 80%;
   }
-  body #myBtn {
-    right: 100px;
+  body main .ourPricing .cards .card2 {
+    bottom: 0;
+  }
+  body footer .rgpd a {
+    margin: 10px;
   }
 }/*# sourceMappingURL=index.css.map */
