@@ -162,13 +162,13 @@
   width: 100%;
 }
 * body main #Features, * body main #Team, * body main #blog {
-  padding-top: 90px;
   height: 100vh;
 }
 * body main #Features {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 * body main #Features h2 {
   margin: 20px 0;
@@ -212,7 +212,7 @@
   flex-direction: column;
   align-items: center;
   width: 100%;
-  background-color: lightgrey;
+  justify-content: center;
 }
 * body main #Team h2 {
   margin: 20px 0;
@@ -257,7 +257,7 @@
   justify-content: center;
   transition: transform 0.5s;
   z-index: 1;
-  left: 59px;
+  left: 65px;
 }
 * body main #Team .team_images_section figure .hoverImg .social-media-hover a {
   cursor: pointer;
@@ -342,6 +342,7 @@
   flex-direction: column;
   align-items: center;
   width: 100%;
+  justify-content: center;
 }
 * body main #blog h2 {
   color: black;
