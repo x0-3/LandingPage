@@ -675,6 +675,9 @@
     padding: 25px 0px;
     width: 31%;
   }
+  body main #Team {
+    height: auto;
+  }
   body main #Team h2, body main #Team p {
     width: 100%;
   }
@@ -689,6 +692,17 @@
   }
   body main #blog article figure p {
     margin: 0;
+  }
+  body main #pricing article {
+    width: 45%;
+  }
+  body main .ourPricing p {
+    width: 75%;
+  }
+  body main .ourPricing .cards .card1, body main .ourPricing .cards .card2, body main .ourPricing .cards .card3 {
+    width: 32%;
+    padding: 35px 4px;
+    margin: 8px;
   }
 }
 @media only screen and (max-width: 767px) {

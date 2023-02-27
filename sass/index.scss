@@ -856,6 +856,7 @@ $breakpoint-laptop : 959px;
             }
 
             #Team {
+                height: auto;
                 h2,p{
                     width: 100%;
                 }
@@ -878,6 +879,25 @@ $breakpoint-laptop : 959px;
                         p{
                             margin: 0;
                         }   
+                    }
+                }
+            }
+
+            #pricing {
+                article {
+                    width: 45%;
+                }    
+            }
+
+            .ourPricing { 
+                p {
+                    width: 75%;
+                }
+                .cards{ 
+                    .card1,.card2,.card3 {
+                        width: 32%;
+                        padding: 35px 4px;
+                        margin: 8px;
                     }
                 }
             }
