@@ -81,6 +81,13 @@
 * body header .navSection h1 {
   color: white;
 }
+* body header .navSection nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  justify-content: space-evenly;
+}
 * body header .navSection nav ul {
   display: flex;
   list-style: none;
@@ -92,10 +99,13 @@
   color: white;
   text-decoration: none;
 }
-* body header .navSection .social-media-icons a {
+* body header .navSection nav .social-media-icons a {
   color: white;
   text-decoration: none;
   margin: 0 10px;
+}
+* body header .navSection .fa-bars {
+  display: none;
 }
 * body header #Home {
   display: flex;
@@ -622,4 +632,92 @@
   -moz-border-radius: 36px;
   -ms-border-radius: 36px;
   -o-border-radius: 36px;
+}
+
+@media only screen and (max-width: 767px) {
+  body header .navSection {
+    justify-content: flex-start;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px;
+  }
+  body header .navSection nav {
+    display: none;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    text-align: center;
+  }
+  body header .navSection nav ul {
+    display: block;
+    margin: 10px;
+  }
+  body header .navSection .fa-bars {
+    display: block;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    color: white;
+  }
+  body header #Home {
+    flex-direction: column-reverse;
+  }
+  body header #Home .headline {
+    width: 100%;
+  }
+  body header #Home figure {
+    width: 100%;
+  }
+  body main #Features, body main #Team, body main #blog {
+    height: auto;
+  }
+  body main #Features .product_cards_section {
+    flex-direction: column;
+    align-items: center;
+  }
+  body main #Features .product_cards_section #product_cards {
+    width: 80%;
+  }
+  body main #Team h2, body main #Team p {
+    width: 100%;
+  }
+  body main #Team .team_images_section {
+    flex-direction: column;
+    align-items: center;
+  }
+  body main #Team .team_images_section figure {
+    width: 80%;
+  }
+  body main #blog p {
+    width: 100%;
+  }
+  body main #blog article {
+    flex-direction: column;
+    align-items: center;
+  }
+  body main #blog article figure {
+    width: 80%;
+  }
+  body main #pricing {
+    flex-direction: column;
+  }
+  body main #pricing article {
+    width: 100%;
+  }
+  body main #pricing figure {
+    width: 100%;
+  }
+  body main .ourPricing p {
+    width: 100%;
+  }
+  body main .ourPricing .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+  body main .ourPricing .cards .card1, body main .ourPricing .cards .card2, body main .ourPricing .cards .card3 {
+    width: 80%;
+  }
+  body #myBtn {
+    right: 100px;
+  }
 }/*# sourceMappingURL=index.css.map */
