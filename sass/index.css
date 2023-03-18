@@ -747,12 +747,19 @@
     display: block;
     margin: 10px;
   }
+  body header .navSection nav ul li {
+    padding: 6px;
+  }
+  body header .navSection nav .social-media-icons {
+    font-size: x-large;
+  }
   body header .navSection .fa-bars {
     display: block;
     position: absolute;
     right: 15px;
     top: 15px;
     color: white;
+    font-size: x-large;
   }
   body header #Home {
     flex-direction: column-reverse;

@@ -935,6 +935,13 @@ $breakpoint-laptop : 959px;
                     ul{
                         display: block;
                         margin: 10px;
+                        li{
+                            padding: 6px;
+                        }
+                    }
+
+                    .social-media-icons{
+                        font-size: x-large;
                     }
                 }
                 .fa-bars{
@@ -943,6 +950,8 @@ $breakpoint-laptop : 959px;
                     right: 15px;
                     top: 15px;
                     color: white;
+                    font-size: x-large;
+
                 }
             }
 

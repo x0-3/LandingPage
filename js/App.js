@@ -1,3 +1,5 @@
+/*************************************************scroll to top******************************************************/
+
 let mybutton = document.getElementById("myBtn");
 
 // When the user scrolls down 20px from the top of the document, show the button
@@ -28,6 +30,8 @@ function myFunction() {
   }
 }
 
+/*************************************************color picker******************************************************/
+
 // change the color of the header and cards
 function changeBodyBg(color){
   var background = document.getElementsByClassName("colorChange");
@@ -50,7 +54,8 @@ function textColor(color){
   }
 }
 
-// menu phone
+/*************************************************menu phone******************************************************/
+
 function mobileNav() {
   var x = document.getElementById("myLinks");
   if (x.style.display === "block") {
