@@ -141,8 +141,6 @@
   position: absolute;
   top: 0;
   right: 4px;
-  /*z-index: 1;
-  */
   border: none;
   top: 5px;
   height: 36px;
@@ -391,7 +389,6 @@
   visibility: hidden;
   opacity: 0;
   border-radius: 5px;
-  /* transition effect. not necessary */
   transition: opacity 0.2s, visibility 0.2s;
 }
 * body main #blog article figure .img .hoverOnImg ul {
@@ -684,6 +681,20 @@
   body main #Team .team_images_section figure {
     width: 25%;
   }
+  body main #Team .team_images_section figure .hoverImg {
+    flex-direction: column;
+  }
+  body main #Team .team_images_section figure .hoverImg .social-media-hover {
+    visibility: visible;
+    opacity: 1;
+    position: initial;
+    flex-direction: initial;
+    width: 100%;
+    height: auto;
+  }
+  body main #Team .team_images_section figure .hoverImg img {
+    margin: 10px 0 20px;
+  }
   body main #blog p {
     width: 100%;
   }
@@ -702,6 +713,9 @@
   }
   body main #pricing article {
     width: 45%;
+  }
+  body main #pricing article button {
+    margin-bottom: 15px;
   }
   body main .ourPricing p {
     width: 75%;
@@ -772,6 +786,23 @@
     width: 80%;
     margin: 20px;
   }
+  body main #Team .team_images_section figure .hoverImg {
+    flex-direction: column;
+  }
+  body main #Team .team_images_section figure .hoverImg .social-media-hover {
+    visibility: visible;
+    opacity: 1;
+    position: initial;
+    flex-direction: initial;
+    width: 100%;
+    height: auto;
+  }
+  body main #Team .team_images_section figure .hoverImg .social-media-hover a {
+    font-size: x-large;
+  }
+  body main #Team .team_images_section figure .hoverImg img {
+    margin: 10px 0 20px;
+  }
   body main #blog p {
     width: 100%;
   }
@@ -783,8 +814,14 @@
     width: 80%;
     margin: 20px;
   }
+  body main #blog article figure .img .hoverOnImg {
+    visibility: visible;
+    opacity: 1;
+  }
   body main #pricing {
     flex-direction: column;
+    width: 95%;
+    margin: auto;
   }
   body main #pricing h2 {
     text-align: center;
@@ -794,6 +831,9 @@
   }
   body main #pricing article {
     width: 100%;
+  }
+  body main #pricing article button {
+    margin-bottom: 15px;
   }
   body main #pricing figure {
     width: 100%;
